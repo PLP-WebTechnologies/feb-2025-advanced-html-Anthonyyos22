@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1><i class="fas fa-code"></i> Advanced HTML5 Elements</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Ordered List Section -->
+        <section class="card">
+            <h2><i class="fas fa-list-ol"></i> Ordered List with Roman Numerals</h2>
+            <ol type="I" class="fancy-list">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+                <li>Fourth item</li>
+                <li>Fifth item</li>
+            </ol>
+        </section>
+
+        <!-- Image Section -->
+        <section class="card">
+            <h2><i class="fas fa-image"></i>  Image from Pexels</h2>
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" 
+                     alt="Beautiful landscape">
+                <div class="image-caption">Photo by Pexels</div>
+            </div>
+        </section>
+
+        <!-- Table Section -->
+        <section class="card">
+            <h2><i class="fas fa-table"></i> Contacts Table</h2>
+            <div class="table-responsive">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Mobile</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Joseph muriithi</td>
+                            <td>227 Embu</td>
+                            <td>0796471777</td>
+                            <td>joseph@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jane njeri</td>
+                            <td>456 Oak </td>
+                            <td>0754867435</td>
+                            <td>jane@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mike Johnson</td>
+                            <td>789 Pine Rd</td>
+                            <td>555-9012</td>
+                            <td>mike@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Sarah Williams</td>
+                            <td>321 Elm Blvd</td>
+                            <td>075553456</td>
+                            <td>sarah@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>David Brown</td>
+                            <td>654 </td>
+                            <td>0754693856</td>
+                            <td>david@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="card">
+            <h2><i class="fas fa-edit"></i> Registration Form</h2>
+            <form class="styled-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="joseph@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" 
+                           placeholder="At least 8 characters" minlength="8" required>
+                    <div class="password-strength">
+                        <span class="strength-bar"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select a country</option>
+                        <option value="us">Kenya</option>
+                        <option value="uk">Ghana</option>
+                        <option value="ca">England</option>
+                        <option value="au">Australia</option>
+                    </select>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Gender:</legend>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="male" required>
+                            <span class="radio-custom"></span>
+                            Male
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="female">
+                            <span class="radio-custom"></span>
+                            Female
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="other">
+                            <span class="radio-custom"></span>
+                            Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend>Interests (Select all that apply):</legend>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="interests" value="sports">
+                            <span class="checkbox-custom"></span>
+                            Sports
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="interests" value="music">
+                            <span class="checkbox-custom"></span>
+                            Music
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="interests" value="reading">
+                            <span class="checkbox-custom"></span>
+                            Reading
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i> Register
+                    </button>
+                    <button type="reset" class="btn btn-secondary">
+                        <i class="fas fa-undo"></i> Reset
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section class="card">
+            <h2><i class="fas fa-photo-video"></i> Multimedia Elements</h2>
+            
+            <div class="multimedia-container">
+                <div class="media-item">
+                    <h3>Audio Example</h3>
+                    <audio controls class="styled-audio">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                
+                <div class="media-item">
+                    <h3>Video Example</h3>
+                    <video controls class="styled-video">
+                        <source src="https://www.youtube.com/watch?v=G7nmew29MK4&pp=ygUDcGxw" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 HTML5 Practice. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
